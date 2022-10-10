@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program page</title>
+    <script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
+  </head>
+  <body class="bg-black">
+
+    <header class="flex justify-between">
+      <div>
+        <img class="h-16 m-2" src="svg/vs-logo.svg" alt="logo">
+      </div>
+      <div class="text-white flex justify-evenly">
+        <!-- <a href="index.html">Program 2022</a>
+        <a href="index.html">Billetter</a> -->
+        <img class="h-6 m-6" src="svg/burger-white.svg" alt="burger">
+      </div>
+    </header>
+
+    <main class="text-white" id="step" x-data="{ spilledag: 'alledage', spillested: 'allevenues', skjulteforestillinger : 0 }">
+    <h2 class="uppercase pt-20 pb-10 px-10 text-2xl">program 2022</h2>
+     
+    <!-- FILTERS -->
+    <header class="py-10 px-10">
+        <form id="filtre" class="flex flex-col">
+          
+        <div class="mb-4 mr-4">
+        <label for="spilledag">Dato</label>
+        <select class="bg-black border-accent" name="spilledag" id="spilledag" x-model="spilledag" form="filtre" x-on:change="$nextTick(() => { ingenforestillinger() });">
+         
+          <option value="alledage">Alle dage</option>
+          <option value="tirsdag">Tirsdag</option>
+          <option value="onsdag">Onsdag</option>
+          <option value="torsdag">Torsdag</option>
+          <option value="fredag">Fredag</option>
+          <option value="lordag">Lørdag</option>
+        </select> 
+      </div>
+
+      <div>
+      <label for="spillested">Venue</label>
+      <select class="bg-black border-accent" name="spillested" id="spillested" x-model="spillested" form="filtre" x-on:change="$nextTick(() => { ingenforestillinger() });">
+        <option value="allevenues">Alle venues</option>
+        <option value="vox">Vox</option>
+        <option value="downunder">Downunder</option>
+        <option value="zebu">Zebu</option>
+        <option value="xenon">Xenon</option>
+      </select> 
+    </div>
+
+        </form>
+      </header>
+
+    <!-- SHOWS -->
+    <div class="forstillinger">
+        <section class="forestilling grid grid-cols-2 gap-5 py-20" :class="{'hidden': !(['alledage', 'torsdag', 'fredag'].includes(spilledag) && ['allevenues', 'xenon'].includes(spillested)) }" x-transition:enter.duration.800ms  x-on:change="testfunction();">
+            
+            <div class="grid">
+                <img class="m-auto" src="blobs/gogoyo-yoku.svg" alt="GO GO YO-YOKU">
+                <p class="grid justify-end items-end">af KOPFKINO</p>
+            </div>
+    
+            <div class="grid items-end mr-10 ">
+                <h3 class="border-b-2 border-white py-4">TORS 04 <span class="text-accent">//</span> FRE 05</h3>
+                <p class="border-b-2 border-white py-4">VENUE: Xenon - Teterhuser</p>
+                <div class="border-b-2 boder white py-4">
+                    <p>TORS 04: 16:45 & 20:15</p>
+                    <p>FRE 05: 16:30</p>
+                </div>
+                <a class="underline pt-4" href="index.html">Læs mere > </a>
+            </div>
+        </section>
+    
+        <section class="forestilling grid grid-cols-2 gap-5 py-20" :class="{'hidden': !(['alledage', 'torsdag', 'fredag'].includes(spilledag) && ['allevenues', 'downunder'].includes(spillested)) }" x-transition:enter.duration.800ms  x-on:change="testfunction();">
+            <div class="grid items-end ml-10 ">
+                <h3 class="border-b-2 border-white py-4">TORS 04 <span class="text-accent">//</span> FRE 05</h3>
+                <p class="border-b-2 border-white py-4">VENUE: Downunder</p>
+                <div class="border-b-2 boder white py-4">
+                    <p>TORS 04: 15:00, 18:15 & 20:15</p>
+                    <p>FRE 05: 15:00, 18:00 & 20:15</p>
+                </div>
+                <a class="underline pt-4" href="index.html">Læs mere > </a>
+            </div>
+            <div class="grid">
+                <img class="m-auto" src="blobs/re-birth.svg" alt="GO GO YO-YOKU">
+                <p class="grid justify-end items-end mr-10">af Where is the Rabbithole</p>
+            </div>
+        </section>
+    
+        <section class="forestilling grid grid-cols-2 gap-5 py-20" :class="{'hidden': !(['alledage', 'fredag', 'lordag'].includes(spilledag) && ['allevenues', 'xenon'].includes(spillested)) }" x-transition:enter.duration.800ms  x-on:change="testfunction();">
+            <div class="grid">
+                <img class="m-auto" src="blobs/frygten.svg" alt="Frygten for ikke at leve">
+                <p class="grid justify-end items-end">af JUNOS DISCIPLE</p>
+            </div>
+    
+            <div class="grid items-end mr-10 ">
+                <h3 class="border-b-2 border-white py-4">FRE 05 <span class="text-accent">//</span> LØR 06</h3>
+                <p class="border-b-2 border-white py-4">VENUE: Xenon - Teterhuser</p>
+                <div class="border-b-2 boder white py-4">
+                    <p>FRE 05: 20:30</p>
+                    <p>LØR 05: 12:30 & 14:45</p>
+                </div>
+                <a class="underline pt-4" href="index.html">Læs mere > </a>
+            </div>
+        </section>
+    
+        <section class="forestilling grid grid-cols-2 gap-5 py-20" :class="{'hidden': !(['alledage', 'tirsdag', 'onsdag'].includes(spilledag) && ['allevenues', 'vox'].includes(spillested)) }" x-transition:enter.duration.800ms  x-on:change="testfunction();">
+            <div class="grid items-end ml-10 ">
+                <h3 class="border-b-2 border-white py-4">TIRS 02 <span class="text-accent">//</span> ONS 03</h3>
+                <p class="border-b-2 border-white py-4">VENUE: VOX - Teaterhuset</p>
+                <div class="border-b-2 boder white py-4">
+                    <p>TIRS 02: 18:30</p>
+                    <p>ONS 03: 16:15 & 20:00</p>
+                </div>
+                <a class="underline pt-4" href="index.html">Læs mere > </a>
+            </div>
+            <div class="grid">
+                <img class="m-auto" src="blobs/vildmedmig.svg" alt="VILD MED MIG">
+                <p class="grid justify-end items-end mr-10">af TEATER MANNEQUIN</p>
+            </div>
+        </section>
+    
+        <section class="forestilling grid grid-cols-2 gap-5 py-20" :class="{'hidden': !(['alledage', 'tirsdag', 'onsdag'].includes(spilledag) && ['allevenues', 'zebu'].includes(spillested)) }" x-transition:enter.duration.800ms  x-on:change="testfunction();">
+            <div class="grid">
+                <img class="m-auto" src="blobs/wftwt.svg" alt="WFTWT">
+                <p class="grid justify-end items-end">af Astrid & Lotte</p>
+            </div>
+    
+            <div class="grid items-end mr-10 ">
+                <h3 class="border-b-2 border-white py-4 ">TIRS 02 <span class="text-accent">//</span> ONS 03</h3>
+                <p class="border-b-2 border-white py-4">VENUE: ZeBU</p>
+                <div class="border-b-2 boder white py-4">
+                    <p>TIRS 02: 16:00</p>
+                    <p>ONS 02: 18:30</p>
+                </div>
+                <a class="underline pt-4" href="index.html">Læs mere > </a>
+            </div>
+        </section>
+    
+        <section class="forestilling grid grid-cols-2 gap-5 py-20" :class="{'hidden': !(['alledage', 'torsdag', 'fredag', 'lordag'].includes(spilledag) && ['allevenues', 'zebu'].includes(spillested)) }" x-transition:enter.duration.800ms  x-on:change="testfunction();">
+            <div class="grid items-end ml-10 ">
+                <h3 class="border-b-2 border-white py-4">TORS 04 <span class="text-accent">//</span> FRE 05 <span class="text-accent">//</span> LØR 06</h3>
+                <p class="border-b-2 border-white py-4">VENUE:ZeBU</p>
+                <div class="border-b-2 boder white py-4">
+                    <p>TORS 04: 18:30</p>
+                    <p>FRE 05: 18:00</p>
+                    <p>LØR 06: 12:45 & 16:15</p>
+                </div>
+                <a class="underline pt-4" href="index.html">Læs mere > </a>
+            </div>
+            <div class="grid">
+                <img class="m-auto" src="blobs/detlevenderum.svg" alt="DET LEVENDE RUM">
+                <p class="grid justify-end items-end mr-10">af Spræng Danseteater</p>
+            </div>
+        </section>
+    
+        <section class="forestilling grid grid-cols-2 gap-5 py-20" :class="{'hidden': !(['alledage', 'fredag', 'lordag'].includes(spilledag) && ['allevenues', 'vox'].includes(spillested)) }" x-transition:enter.duration.800ms  x-on:change="testfunction();">
+            <div class="grid">
+                <img class="m-auto" src="blobs/mlsmhr.svg" alt="mlsmhr">
+                <p class="grid justify-end items-end">af Kill Your Darlings</p>
+            </div>
+    
+            <div class="grid items-end mr-10 ">
+                <h3 class="border-b-2 border-white py-4">FRE 05 <span class="text-accent">//</span> LØR 06</h3>
+                <p class="border-b-2 border-white py-4">VENUE: VOX - Teterhuser</p>
+                <div class="border-b-2 boder white py-4">
+                    <p>FRE 05: 119:15</p>
+                    <p>LØR 06: 13:00 & 17:30</p>
+                </div>
+                <a class="underline pt-4" href="index.html">Læs mere > </a>
+            </div>
+        </section>
+    </div>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
