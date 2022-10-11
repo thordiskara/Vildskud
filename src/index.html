@@ -8,14 +8,43 @@
   </head>
   <body class="bg-black">
 
-    <header class="flex justify-between">
-      <div>
+    <header class="flex justify-between ">
+      <div class="pt-6 pl-4">
         <img class="h-16 m-2" src="svg/vs-logo.svg" alt="logo">
       </div>
-      <div class="text-white flex justify-evenly">
-        <!-- <a href="index.html">Program 2022</a>
-        <a href="index.html">Billetter</a> -->
-        <img class="h-6 m-6" src="svg/burger-white.svg" alt="burger">
+        
+      <!-- BURGER -->
+      <div class="container w-screen">
+        <nav class="navbar w-screen h-screen bg-black fixed flex items-center">
+          <div class="hamburger-menu w-10 h-12 fixed cursor-pointer flex flex-col justify-around top-12 right-12">
+            <div class="line line-1 rounded"></div>
+            <div class="line-other line-2 rounded"></div>
+            <div class="line line-3 rounded"></div>
+          </div>
+          <ul class="nav-list text-3xl">
+            <li class="nav-item p-8">
+              <a href="#" class="nav-link uppercase text-white relative hover:text-accent">Program 2022</a>
+            </li>
+            <li class="nav-item p-8">
+              <a href="#" class="nav-link uppercase text-white relative hover:text-accent">Billetter info</a>
+            </li>
+            <li class="nav-item p-8">
+              <a href="#" class="nav-link uppercase text-white relative hover:text-accent">Vær med</a>
+            </li>
+            <li class="nav-item p-8">
+              <a href="#" class="nav-link uppercase text-white relative pl-16 hover:text-accent">Frivillige</a>
+            </li>
+            <li class="nav-item p-8">
+              <a href="#" class="nav-link uppercase text-white relative pl-16 hover:text-accent">Open call</a>
+            </li>
+            <li class="nav-item p-8">
+              <a href="#" class="nav-link uppercase text-white relative hover:text-accent">Om vildskud</a>
+            </li>
+            <li class="nav-item p-8">
+              <a href="#" class="nav-link uppercase text-white relative hover:text-accent">Venuer</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
@@ -185,15 +214,15 @@
 
       <section class="border-y-2 border-white px-10 py-5">
       <div class="flex justify-between">
-        <img src="img/teaterre.webp" alt="teater republique">
-        <img src="img/teaterv.webp" alt="teater V">
-        <img src="img/zebu.webp" alt="ZeBU">
-        <img src="img/fdd.webp" alt="FDD">
+        <img class="w-[5rem] h-full object-cover" src="img/teaterre.webp" alt="teater republique">
+        <img class="w-[5rem] h-full object-cover" src="img/teaterv.webp" alt="teater V">
+        <img class="w-[5rem] h-full object-cover" src="img/zebu.webp" alt="ZeBU">
+        <img class="w-[5rem] h-full object-cover" src="img/fdd.webp" alt="FDD">
       </div>
-      <div class="flex justify-evenly">
-        <img src="img/nordea.webp" alt="nordea">
-        <img src="img/kphkommune.webp" alt="kph kommune">
-        <img src="img/dats.webp" alt="dats">
+      <div class="flex justify-around">
+        <img class="w-[5rem] h-full object-cover" src="img/nordea.webp" alt="nordea">
+        <img class="w-[3rem] h-full object-cover" src="img/kphkommune.webp" alt="kph kommune">
+        <img class="w-[5rem] h-full object-cover" src="img/dats.webp" alt="dats">
       </div>
       </section>
     </main>

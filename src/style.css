@@ -28,4 +28,68 @@
     details[open] > summary > span{
         color: #DFFC6E;
     }
+
+    /* BURGER */
+      .navbar {
+        top: 0;
+        right: -1600px;
+        transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+        z-index: 10;
+      }
+      
+      .change {
+        right: 0;
+      }
+      
+      .line {
+        width: 70%;
+        height: 3px;
+        background-color: white;
+        transition: all 0.8s;
+        margin: auto;
+      }
+
+      .line-other{
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        transition: all 0.8s;
+      }
+      
+      .change .line-1 {
+        transform: rotate(-405deg) translate(-12px, 6px);
+      }
+      
+      .change .line-2 {
+        opacity: 0;
+      }
+      
+      .change .line-3 {
+        transform: rotate(405deg) translate(-12px, -6px);
+      }
+      
+      .nav-link::before,
+      .nav-link::after {
+        position: absolute;
+        left: 0;
+        transform: scaleX(0);
+        transition: transform 0.5s;
+      }
+      
+      .nav-link::after {
+        bottom: 0;
+        transform-origin: right;
+      }
+      
+      .nav-link::before {
+        top: 0;
+        transform-origin: left;
+      }
+      
+      .nav-link:hover::before,
+      .nav-link:hover::after {
+        transform: scaleX(1);
+      }
+
+      
 }
