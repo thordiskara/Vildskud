@@ -91,5 +91,12 @@
         transform: scaleX(1);
       }
 
+      @supports (-webkit-text-stroke: 2px white) {
+        .title{
+            -webkit-text-stroke: 2px white;
+            -webkit-text-fill-color: rgba(220, 223, 224, 0) ;
+        }
+              } 
+
       
 }
