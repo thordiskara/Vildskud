@@ -29,15 +29,15 @@
           
         <div class="mb-4 mr-4">
         <label for="spilledag">Dato</label>
-        <select class="bg-black border-accent" name="spilledag" id="spilledag" x-model="spilledag" form="filtre" x-on:change="$nextTick(() => { ingenforestillinger() });">
+        <p class="bg-black border-accent " name="spilledag" id="spilledag" x-model="spilledag" form="filtre" x-on:click="$nextTick(() => { ingenforestillinger() });">
          
-          <option value="alledage">Alle dage</option>
-          <option value="tirsdag">Tirsdag</option>
-          <option value="onsdag">Onsdag</option>
-          <option value="torsdag">Torsdag</option>
-          <option value="fredag">Fredag</option>
-          <option value="lordag">Lørdag</option>
-        </select> 
+          <span class="uppercase cursor-pointer" value="alledage">Alle dage</span>
+          <span class="uppercase" value="tirsdag">Tirsdag</span>
+          <span class="uppercase" value="onsdag">Onsdag</span>
+          <span class="uppercase" value="torsdag">Torsdag</span>
+          <span class="uppercase" value="fredag">Fredag</span>
+          <span class="uppercase" value="lordag">Lørdag</span>
+        </p> 
       </div>
 
       <div>
