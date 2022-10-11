@@ -2,30 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    details > summary {
-        list-style-type: '+';
-    }
-    
-    details[open] > summary {
-        list-style-type: '-';
-    }
-    
-    details {
-        border-bottom: 2px solid white;
-        border-radius: 0.2rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        padding-left: 0.5rem;
+@layer components {
+  details > summary {
+    list-style-type: "+";
+  }
 
+  details[open] > summary {
+    list-style-type: "-";
+  }
 
-    }
-    
-    details[open] > summary {
-        margin-bottom: 0.5rem;
-    }
+  details {
+    border-bottom: 2px solid white;
+    border-radius: 0.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+  }
 
-    details[open] > summary > span{
-        color: #DFFC6E;
-    }
+  details[open] > summary {
+    margin-bottom: 0.5rem;
+  }
+
+  details[open] > summary > span {
+    color: #dffc6e;
+  }
 }
+
+/*.opencallBorder {
+  border-right: solid 2px #dffc6e;
+}*/
