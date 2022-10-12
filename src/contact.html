@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vildskud Festival</title>
+  </head>
+  <body class="bg-black">
+    <header class="flex justify-between">
+      <a href="#" class="pt-6 pl-4">
+        <img class="m-2 h-16" src="svg/vs-logo.svg" alt="logo" />
+      </a>
+
+      <!-- BURGER -->
+      <div class="container w-screen">
+        <nav class="navbar fixed flex h-screen w-screen items-center bg-black">
+          <div
+            class="hamburger-menu fixed top-12 right-12 flex h-12 w-10 cursor-pointer flex-col justify-around"
+          >
+            <div class="line line-1 rounded"></div>
+            <div class="line-other line-2 rounded"></div>
+            <div class="line line-3 rounded"></div>
+          </div>
+          <ul class="nav-list text-3xl">
+            <li class="nav-item px-8 py-5">
+              <a
+                href="program.html"
+                class="nav-link relative uppercase text-white hover:text-accent"
+                >Program 2022</a
+              >
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a
+                href="billetter.html"
+                class="nav-link relative uppercase text-white hover:text-accent"
+                >Billetter info</a
+              >
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a
+                href="vaermed.html"
+                class="nav-link relative uppercase text-white hover:text-accent"
+                >Vær med</a
+              >
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a
+                href="frivillige.html"
+                class="nav-link relative pl-16 uppercase text-white hover:text-accent"
+                >Frivillige</a
+              >
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a
+                href="opencall.html"
+                class="nav-link relative pl-16 uppercase text-white hover:text-accent"
+                >Open call</a
+              >
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a
+                href="om-vildskud.html"
+                class="nav-link relative uppercase text-white hover:text-accent"
+                >Om vildskud</a
+              >
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a
+                href="teamet.html"
+                class="nav-link relative pl-16 uppercase text-white hover:text-accent"
+                >Teamet</a
+              >
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a
+                href="venuer.html"
+                class="nav-link relative uppercase text-white hover:text-accent"
+                >Venuer</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="text-white">
+      <h1 class="px-8 pt-20 pb-10 text-2xl uppercase">kontakt</h1>
+      <div class="px-8">
+        <p>
+          Har du spørgsmål vedr. frivilligt arbejde, hvad det vil sige at være
+          samarbejdspartner med Vildskud, om at spille på festivalen, eller vil
+          du bare sige hej?
+        </p>
+        <p class="pt-4">
+          Så send en besked til Vildskud-temaet ved hjælp af
+          <span class="text-accent">kontaktformularen</span>
+          her under.
+        </p>
+        <p class="pt-4">
+          Hvis du er på udkig efter en bestemt person/rolle i teamet, kan du
+          også tage et kig på vores
+          <a class="uppercase text-accent underline" href="teamet.html"
+            >teamet</a
+          >
+          side.
+        </p>
+      </div>
+      <div class="px-8 py-10">
+        <form class="border-l-2 border-accent pl-4" action="action_page.php">
+          <div class="grid">
+            <label for="fname">NAVN</label>
+            <input
+              class="border-none bg-[#373737]"
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Dit Navn..."
+            />
+          </div>
+          <div class="grid pt-6">
+            <label for="lname">E-MAIL</label>
+            <input
+              class="bg-[#373737]"
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="example@gmail.com..."
+            />
+          </div>
+          <div class="grid pt-6">
+            <label for="subject">BESKED</label>
+            <textarea
+              class="bg-[#373737]"
+              id="subject"
+              name="subject"
+              placeholder="
+            Skriv noget.."
+              style="height: 200px"
+            ></textarea>
+          </div>
+          <input
+            class="mt-6 cursor-pointer bg-accent px-3 py-2 uppercase text-black"
+            type="submit"
+            value="indsend"
+          />
+        </form>
+      </div>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
