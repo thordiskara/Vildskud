@@ -101,7 +101,9 @@
   details[open] > summary > span {
     color: #dffc6e;
   }
-
+a:hover{
+  color: #dffc6e;
+}
 
 /*.opencallBorder {
   border-right: solid 2px #dffc6e;
