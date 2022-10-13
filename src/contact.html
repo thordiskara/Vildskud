@@ -67,6 +67,14 @@
             </li>
             <li class="nav-item px-8 py-5">
               <a
+                href="contact.html"
+                class="nav-link relative pl-16 uppercase text-white hover:text-accent"
+                >Kontakt</a
+              >
+            </li>
+
+            <li class="nav-item px-8 py-5">
+              <a
                 href="teamet.html"
                 class="nav-link relative pl-16 uppercase text-white hover:text-accent"
                 >Teamet</a
@@ -110,7 +118,7 @@
         </div>
         <div class="px-8 py-10 md:pl-4">
           <form
-            class="border-l-2 border-accent pl-4 md:pl-8"
+            class="border-l-2 border-white pl-4 md:pl-8"
             action="action_page.php"
           >
             <div class="grid">
@@ -130,7 +138,7 @@
                 type="text"
                 id="lname"
                 name="lastname"
-                placeholder="example@gmail.com..."
+                placeholder="eksempel@email.com..."
               />
             </div>
             <div class="grid pt-6">
@@ -139,8 +147,6 @@
                 class="border-none bg-[#373737]"
                 id="subject"
                 name="subject"
-                placeholder="
-            Skriv noget.."
                 style="height: 200px"
               ></textarea>
             </div>
@@ -153,7 +159,35 @@
         </div>
       </section>
     </main>
+    <footer class="border-t-2 border-white px-8 pt-10 text-white">
+      <section class="flex justify-between">
+        <div class="flex flex-col">
+          <a class="pb-2 uppercase hover:text-accent" href="contact.html"
+            >Kontakt</a
+          >
+          <a class="pb-2 uppercase hover:text-accent" href="privat.html"
+            >Privatlivspolitik</a
+          >
+          <a class="uppercase hover:text-accent" href="sitemap.html">Sitemap</a>
+        </div>
 
+        <div class="flex flex-col self-end tracking-wider">
+          <a
+            class="pb-2 hover:text-accent"
+            href="https://www.facebook.com/vildskudfestival/"
+            >FACEBOOK</a
+          >
+          <a
+            class="hover:text-accent"
+            href="https://www.instagram.com/vildskudfestival/"
+            >INSTAGRAM</a
+          >
+        </div>
+      </section>
+      <p class="pt-10 pb-4 text-sm">
+        © Linnea Visser - Evelina Falander - Þórdís Kara Valsdóttir
+      </p>
+    </footer>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
