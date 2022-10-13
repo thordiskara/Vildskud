@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teamet</title>
+  </head>
+  <body class="bg-black">
+    <header class="flex justify-between ">
+      <a href="index.html" class="pt-6 pl-4">
+        <img class="h-16 m-2" src="svg/vs-logo.svg" alt="logo">
+      </a>
+        
+      <!-- BURGER -->
+      <div class="container w-screen">
+        <nav class="navbar w-screen h-screen bg-black fixed flex items-center">
+          <div class="hamburger-menu w-10 h-12 fixed cursor-pointer flex flex-col justify-around top-12 right-12">
+            <div class="line line-1 rounded"></div>
+            <div class="line-other line-2 rounded"></div>
+            <div class="line line-3 rounded"></div>
+          </div>
+          <ul class="nav-list text-3xl">
+            <li class="nav-item px-8 py-5">
+              <a href="program.html" class="nav-link uppercase text-white relative hover:text-accent">Program 2022</a>
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a href="billetter.html" class="nav-link uppercase text-white relative hover:text-accent">Billetter info</a>
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a href="vaermed.html" class="nav-link uppercase text-white relative hover:text-accent">Vær med</a>
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a href="#" class="nav-link uppercase text-white relative pl-16 hover:text-accent">Frivillige</a>
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a href="opencall.html" class="nav-link uppercase text-white relative pl-16 hover:text-accent">Open call</a>
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a href="om-vildskud.html" class="nav-link uppercase text-white relative hover:text-accent">Om vildskud</a>
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a href="teamet.html" class="nav-link uppercase text-white relative pl-16 hover:text-accent">Teamet</a>
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a href="venuer.html" class="nav-link uppercase text-white relative hover:text-accent">Venuer</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="text-white">
+      <h1 class="px-8 md:px-12 pt-20 pb-10 text-2xl uppercase md:text-4xl">Events</h1>
+
+      <p class="px-8 md:px-12">Find billetter på <a class="text-accent" href="https://www.yourticket.dk/vildskud/">Yourticket.dk/Vildskud</a> eller tjek eventet på <a class="text-accent" href="https://www.facebook.com/vildskudfestival">Vildskuds Facebook</a></p>
+
+      <div class="md:grid md:grid-cols-2 lg:grid-cols-3">
+          <article class="px-8 md:px-12 pt-10">
+              <img class="h-[30rem]" src="svg/event-secenkunst.svg" alt="scenekunst">
+                <h2 class=" text-xl uppercase pt-10  md:text-2xl">
+                Vildskud klæder dig på til fremtidens scenekunst
+                </h2>
+                <p class="text-accent uppercase pt-2 ">fredag 5 AUG: 16:30-17:30 i ukirke</p>
+          </article>
+          <article class="px-8 md:px-12 pt-10">
+            <img class="h-[30rem]" src="posternydramatik.svg" alt="posternydramatik">
+            
+              <h2 class=" text-xl uppercase pt-10  md:text-2xl"> Vildskud klæder dig på til ny dansk dramatik
+              </h2>
+              <p class="text-accent uppercase pt-2 ">torsdag 4 AUG: 16:30-17:30 i ukirke</p>
+        </article>
+        <article class="px-8 md:px-12 pt-10">
+            <img class="h-[30rem]" src="svg/tabu.svg" alt="tabu">
+            
+              <h2 class=" text-xl uppercase pt-10 md:text-2xl">
+                Vildskud klæder dig på til scenekunst om tabu
+              </h2>
+              <p class="text-accent uppercase pt-2 ">onsdag 2 AUG: 19:00-20:00 i ukirke</p>
+        </article>
+      </div>
+        
+              
+    </main>
+    <footer></footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
