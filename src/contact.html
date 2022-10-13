@@ -85,67 +85,73 @@
     </header>
 
     <main class="text-white">
-      <h1 class="px-8 pt-20 pb-10 text-2xl uppercase">kontakt</h1>
-      <div class="px-8">
-        <p>
-          Har du spørgsmål vedr. frivilligt arbejde, hvad det vil sige at være
-          samarbejdspartner med Vildskud, om at spille på festivalen, eller vil
-          du bare sige hej?
-        </p>
-        <p class="pt-4">
-          Så send en besked til Vildskud-temaet ved hjælp af
-          <span class="text-accent">kontaktformularen</span>
-          her under.
-        </p>
-        <p class="pt-4">
-          Hvis du er på udkig efter en bestemt person/rolle i teamet, kan du
-          også tage et kig på vores
-          <a class="uppercase text-accent underline" href="teamet.html"
-            >teamet</a
+      <h1 class="px-8 pt-20 pb-10 text-2xl uppercase md:px-12 md:text-4xl">
+        kontakt
+      </h1>
+      <section class="md:grid md:grid-cols-2 md:px-4">
+        <div class="px-8 md:pt-16 md:pr-8">
+          <p>
+            Har du spørgsmål vedr. frivilligt arbejde, hvad det vil sige at være
+            samarbejdspartner med Vildskud, om at spille på festivalen, eller
+            vil du bare sige hej?
+          </p>
+          <p class="pt-4 md:pt-14">
+            Så send en besked til Vildskud-temaet ved hjælp af
+            <span class="text-accent">kontaktformularen.</span>
+          </p>
+          <p class="pt-4 md:pt-14">
+            Hvis du er på udkig efter en bestemt person/rolle i teamet, kan du
+            også tage et kig på vores
+            <a class="uppercase text-accent underline" href="teamet.html"
+              >teamet</a
+            >
+            side.
+          </p>
+        </div>
+        <div class="px-8 py-10 md:pl-4">
+          <form
+            class="border-l-2 border-accent pl-4 md:pl-8"
+            action="action_page.php"
           >
-          side.
-        </p>
-      </div>
-      <div class="px-8 py-10">
-        <form class="border-l-2 border-accent pl-4" action="action_page.php">
-          <div class="grid">
-            <label class="pb-1" for="fname">NAVN</label>
-            <input
-              class="border-none bg-[#373737]"
-              type="text"
-              id="fname"
-              name="firstname"
-              placeholder="Dit Navn..."
-            />
-          </div>
-          <div class="grid pt-6">
-            <label class="pb-1" for="lname">E-MAIL</label>
-            <input
-              class="border-none bg-[#373737]"
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="example@gmail.com..."
-            />
-          </div>
-          <div class="grid pt-6">
-            <label class="pb-1" for="subject">BESKED</label>
-            <textarea
-              class="border-none bg-[#373737]"
-              id="subject"
-              name="subject"
-              placeholder="
+            <div class="grid">
+              <label class="pb-1" for="fname">NAVN</label>
+              <input
+                class="border-none bg-[#373737]"
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Dit Navn..."
+              />
+            </div>
+            <div class="grid pt-6">
+              <label class="pb-1" for="lname">E-MAIL</label>
+              <input
+                class="border-none bg-[#373737]"
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="example@gmail.com..."
+              />
+            </div>
+            <div class="grid pt-6">
+              <label class="pb-1" for="subject">BESKED</label>
+              <textarea
+                class="border-none bg-[#373737]"
+                id="subject"
+                name="subject"
+                placeholder="
             Skriv noget.."
-              style="height: 200px"
-            ></textarea>
-          </div>
-          <input
-            class="mt-6 cursor-pointer bg-accent px-3 py-2 uppercase text-black"
-            type="submit"
-            value="indsend"
-          />
-        </form>
-      </div>
+                style="height: 200px"
+              ></textarea>
+            </div>
+            <input
+              class="mt-6 cursor-pointer bg-accent px-3 py-2 uppercase text-black hover:border-2 hover:border-accent hover:bg-black hover:text-accent"
+              type="submit"
+              value="indsend"
+            />
+          </form>
+        </div>
+      </section>
     </main>
 
     <script type="module" src="./main.js"></script>
