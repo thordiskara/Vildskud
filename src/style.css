@@ -109,10 +109,16 @@
     transition: right 0.8s cubic-bezier(1, 0, 0, 1);
     z-index: 10;
   }
+<<<<<<< HEAD
 
   .change {
     right: 0;
   }
+=======
+a:hover{
+  color: #dffc6e;
+}
+>>>>>>> origin/linnea-12th
 
   .line {
     width: 70%;
