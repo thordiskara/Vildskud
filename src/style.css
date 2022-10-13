@@ -85,15 +85,19 @@
         transform: scaleX(1);
       }
 
+      .title{
+        font-family: antique-olive, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
       @supports (-webkit-text-stroke: 2px white) {
         .title{
             -webkit-text-stroke: 2px white;
             -webkit-text-fill-color: rgba(220, 223, 224, 0) ;
         }
               } 
-
-      
-}
+   
   details[open] > summary {
     margin-bottom: 0.5rem;
   }
@@ -102,6 +106,7 @@
     color: #dffc6e;
   }
 
+}
 
 /*.opencallBorder {
   border-right: solid 2px #dffc6e;
