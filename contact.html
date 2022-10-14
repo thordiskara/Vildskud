@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vildskud Festival</title>
+    <script type="module" crossorigin src="./assets/main.c49a0d38.js"></script>
+    <link rel="stylesheet" href="./assets/main.a89fd18b.css">
+  </head>
+  <body class="bg-black">
+    <header class="flex justify-between">
+      <a href="#" class="pt-6 pl-4">
+        <img class="m-2 h-16" src="./assets/vs-logo.dbd924ea.svg" alt="logo" />
+      </a>
+
+      <!-- BURGER -->
+      <div class="container w-screen">
+        <nav class="navbar fixed flex h-screen w-screen items-center bg-black">
+          <div
+            class="hamburger-menu fixed top-12 right-12 flex h-12 w-10 cursor-pointer flex-col justify-around"
+          >
+            <div class="line line-1 rounded"></div>
+            <div class="line-other line-2 rounded"></div>
+            <div class="line line-3 rounded"></div>
+          </div>
+          <ul class="nav-list text-3xl">
+            <li class="nav-item px-8 py-5">
+              <a
+                href="program.html"
+                class="nav-link relative uppercase text-white hover:text-accent"
+                >Program 2022</a
+              >
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a
+                href="billetter.html"
+                class="nav-link relative uppercase text-white hover:text-accent"
+                >Billetter info</a
+              >
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a
+                href="events.html"
+                class="nav-link relative uppercase text-white hover:text-accent"
+                >Events</a
+              >
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a
+                href="vaermed.html"
+                class="nav-link relative uppercase text-white hover:text-accent"
+                >Vær med</a
+              >
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a
+                href="frivillige.html"
+                class="nav-link relative pl-16 uppercase text-white hover:text-accent"
+                >Frivillige</a
+              >
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a
+                href="opencall.html"
+                class="nav-link relative pl-16 uppercase text-white hover:text-accent"
+                >Open call</a
+              >
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a
+                href="om-vildskud.html"
+                class="nav-link relative uppercase text-white hover:text-accent"
+                >Om vildskud</a
+              >
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a
+                href="contact.html"
+                class="nav-link relative pl-16 uppercase text-white hover:text-accent"
+                >Kontakt</a
+              >
+            </li>
+
+            <li class="nav-item px-8 py-5">
+              <a
+                href="teamet.html"
+                class="nav-link relative pl-16 uppercase text-white hover:text-accent"
+                >Teamet</a
+              >
+            </li>
+            <li class="nav-item px-8 py-5">
+              <a
+                href="venuer.html"
+                class="nav-link relative uppercase text-white hover:text-accent"
+                >Venuer</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="text-white">
+      <h1 class="px-8 pt-20 pb-10 text-2xl uppercase md:px-12 md:text-4xl">
+        kontakt
+      </h1>
+      <section class="md:grid md:grid-cols-2 md:px-4">
+        <div class="px-8 md:pt-16 md:pr-8">
+          <p>
+            Har du spørgsmål vedr. frivilligt arbejde, hvad det vil sige at være
+            samarbejdspartner med Vildskud, om at spille på festivalen, eller
+            vil du bare sige hej?
+          </p>
+          <p class="pt-4 md:pt-14">
+            Så send en besked til Vildskud-temaet ved hjælp af
+            <span class="text-accent">kontaktformularen.</span>
+          </p>
+          <p class="pt-4 md:pt-14">
+            Hvis du er på udkig efter en bestemt person/rolle i teamet, kan du
+            også tage et kig på vores
+            <a class="uppercase text-accent underline" href="teamet.html"
+              >teamet</a
+            >
+            side.
+          </p>
+        </div>
+        <div class="px-8 py-10 md:pl-4">
+          <form
+            class="border-l-2 border-white pl-4 md:pl-8"
+            action="action_page.php"
+          >
+            <div class="grid">
+              <label class="pb-1" for="fname">NAVN</label>
+              <input
+                class="border-none bg-[#373737]"
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Dit Navn..."
+              />
+            </div>
+            <div class="grid pt-6">
+              <label class="pb-1" for="lname">E-MAIL</label>
+              <input
+                class="border-none bg-[#373737]"
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="eksempel@email.com..."
+              />
+            </div>
+            <div class="grid pt-6">
+              <label class="pb-1" for="subject">BESKED</label>
+              <textarea
+                class="border-none bg-[#373737]"
+                id="subject"
+                name="subject"
+                style="height: 200px"
+              ></textarea>
+            </div>
+            <input
+              class="mt-6 cursor-pointer bg-accent px-3 py-2 uppercase text-black hover:border-2 hover:border-accent hover:bg-black hover:text-accent"
+              type="submit"
+              value="indsend"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="border-t-2 border-white px-8 pt-10 text-white">
+      <section class="flex justify-between">
+        <div class="flex flex-col">
+          <a class="pb-2 uppercase hover:text-accent" href="contact.html"
+            >Kontakt</a
+          >
+          <a class="pb-2 uppercase hover:text-accent" href="privat.html"
+            >Privatlivspolitik</a
+          >
+          <a class="uppercase hover:text-accent" href="sitemap.html">Sitemap</a>
+        </div>
+
+        <div class="flex flex-col self-end tracking-wider">
+          <a
+            class="pb-2 hover:text-accent"
+            href="https://www.facebook.com/vildskudfestival/"
+            >FACEBOOK</a
+          >
+          <a
+            class="hover:text-accent"
+            href="https://www.instagram.com/vildskudfestival/"
+            >INSTAGRAM</a
+          >
+        </div>
+      </section>
+      <p class="pt-10 pb-4 text-sm">
+        © Linnea Visser - Evelina Falander - Þórdís Kara Valsdóttir
+      </p>
+    </footer>
+    
+  </body>
+</html>
