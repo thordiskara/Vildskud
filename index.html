@@ -5,11 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vildskud Festival</title>
-    <meta name="description" content="Vildskud Festival er Københavns festival for uafhængig scenekunst der strækker sig over 5 dage i Augusti.">
-  <meta name="keywords" content="Teater, Festival, København">
+    <meta
+      name="description"
+      content="Vildskud Festival er Københavns festival for uafhængig scenekunst der strækker sig over 5 dage i Augusti."
+    />
+    <meta name="keywords" content="Teater, Festival, København" />
     <link rel="stylesheet" href="https://use.typekit.net/usw8tpt.css" />
     <script type="module" crossorigin src="./assets/main.aec401da.js"></script>
-    <link rel="stylesheet" href="./assets/main.e61f3d74.css">
+    <link rel="stylesheet" href="./assets/main.23e78601.css">
   </head>
   <body class="bg-black">
     <header class="flex justify-between">
@@ -19,7 +22,9 @@
 
       <!-- BURGER -->
       <div class="container w-screen">
-        <nav class="navbar fixed flex h-screen w-screen items-center bg-black">
+        <nav
+          class="navbar fixed flex w-[80%] items-center border-l-2 border-white bg-black lg:w-[40%]"
+        >
           <div
             class="hamburger-menu fixed top-12 right-12 flex h-12 w-10 cursor-pointer flex-col justify-around"
           >
@@ -106,22 +111,44 @@
 
     <!-- Cookieboks -->
 
-      <div id="cookieboks" class="z-200 bottom-6 fixed bg-black px-8 py-6 mx-5 rounded-sm border-accent border-2 md:mr-[20rem] lg:mr-[40rem]">
-       <div class="text-white z-200">
-          <h1 class="text-xl uppercase">Denne hjemmeside bruger cookies</h1>
-          <br>
-          <p class="text-sm z-200">Vildskud og vores samarbejdspartnere bruger teknologier, herunder cookies, til at indsamle oplysinger on dig til forskellige formål, forbundet til funktionalitet, statistik og markedsføring. </p>
-          <br>
-          <p class="text-sm z-200">Ved at trykke på Accepter alle giver du samtykke til alle disse formål. Du kan læse mere om vores brug af cookies og andre teknologier, samt om vores indsamling og behandling af personoplysinger ved at trykke på linket.</p>
-          <br>
-          <a href="cookies.html" class="underline text-xs">Om cookies</a>
-       </div>
-        
-        <div class="flex justify-center gap-8 pt-8">
-        <button id="afvis" class="border-white border-2 text-white mb-5 px-3 py-2 text-base uppercase hover:border-accent hover:text-accent md:px-8 md:py-4 md:text-lg">Afvis Alle</button>
-        <button id="accepter" class="mb-5 border-2 border-accent bg-accent px-3 py-2 text-base uppercase text-black hover:bg-black hover:text-accent md:px-8 md:py-4 md:text-lg">Accepter Alle</button>
-        </div>
+    <div
+      id="cookieboks"
+      class="z-200 fixed bottom-6 mx-5 rounded-sm border-2 border-accent bg-black px-8 py-6 md:mr-[20rem] lg:mr-[40rem]"
+    >
+      <div class="z-200 text-white">
+        <h1 class="text-xl uppercase">Denne hjemmeside bruger cookies</h1>
+        <br />
+        <p class="z-200 text-sm">
+          Vildskud og vores samarbejdspartnere bruger teknologier, herunder
+          cookies, til at indsamle oplysinger on dig til forskellige formål,
+          forbundet til funktionalitet, statistik og markedsføring.
+        </p>
+        <br />
+        <p class="z-200 text-sm">
+          Ved at trykke på Accepter alle giver du samtykke til alle disse
+          formål. Du kan læse mere om vores brug af cookies og andre
+          teknologier, samt om vores indsamling og behandling af
+          personoplysinger ved at trykke på linket.
+        </p>
+        <br />
+        <a href="cookies.html" class="text-xs underline">Om cookies</a>
       </div>
+
+      <div class="flex justify-center gap-8 pt-8">
+        <button
+          id="afvis"
+          class="mb-5 border-2 border-white px-3 py-2 text-base uppercase text-white hover:border-accent hover:text-accent md:px-8 md:py-4 md:text-lg"
+        >
+          Afvis Alle
+        </button>
+        <button
+          id="accepter"
+          class="mb-5 border-2 border-accent bg-accent px-3 py-2 text-base uppercase text-black hover:bg-black hover:text-accent md:px-8 md:py-4 md:text-lg"
+        >
+          Accepter Alle
+        </button>
+      </div>
+    </div>
 
     <main class="text-white">
       <h1 class="title pt-20 pl-3 text-7xl md:pl-10 md:text-9xl">
@@ -143,7 +170,7 @@
           class="mb-10 grid grid-cols-1 grid-rows-1 self-start pr-3"
         >
           <p
-            class="z-10 col-start-1 row-start-1 justify-center self-center text-center text-lg sm:text-2xl uppercase text-black md:pr-20"
+            class="z-10 col-start-1 row-start-1 justify-center self-center text-center text-lg uppercase text-black sm:text-2xl md:pr-20"
           >
             køb billet
           </p>
@@ -371,7 +398,7 @@
         <!-- CTA PROGRAM -->
         <div class="m-auto flex justify-center pb-10">
           <a
-            class="mb-10 border-2 border-accent bg-accent px-5 py-3 text-xl uppercase text-black hover:bg-black md:px-8 md:py-4 md:text-2xl"
+            class="mb-10 border-2 border-accent bg-accent px-5 py-3 text-xl uppercase text-black hover:bg-black hover:text-accent md:px-8 md:py-4 md:text-2xl"
             href="program.html"
             >Program 2022</a
           >
@@ -419,7 +446,7 @@
                 >1 <span class="font-normal text-accent">//</span> ZeBU</span
               >
               <a
-                class="underline"
+                class="underline hover:text-accent"
                 href="https://www.google.com/maps/place/%C3%98resundsvej+4,+2300+K%C3%B8benhavn/@55.6579625,12.6088012,17z/data=!4m5!3m4!1s0x4652534d18b3e593:0x1510d27540622515!8m2!3d55.6579625!4d12.6088012"
                 >Øresundsvej 4-6, 1. 2300 København S</a
               >
@@ -430,7 +457,7 @@
                 Downunder</span
               >
               <a
-                class="underline"
+                class="underline hover:text-accent"
                 href="https://www.google.com/maps/place/Vandkunsten+5,+1467+K%C3%B8benhavn/@55.6759231,12.5742958,17z/data=!3m1!4b1!4m5!3m4!1s0x46525313d799f6bd:0xfb43e0f309c3ccdb!8m2!3d55.6759231!4d12.5742958"
                 >Vandkunsten 5, 1467 KBH K</a
               >
@@ -441,7 +468,7 @@
                 Xenon & Vox</span
               >
               <a
-                class="underline"
+                class="underline hover:text-accent"
                 href="https://www.google.com/maps/place/Huset-KBH/@55.6763715,12.5725261,17z/data=!3m1!5s0x4652531164c3af43:0x4d4efd44d8eb3be2!4m9!1m2!2m1!1sR%C3%A5dhusstr%C3%A6de+13,+1466+KBH+K+link!3m5!1s0x4652531164a3fb89:0xdb78617809263eb5!8m2!3d55.6763715!4d12.5747148!15sCiJSw6VkaHVzc3Ryw6ZkZSAxMywgMTQ2NiBLQkggSyBsaW5rkgEPY3VsdHVyYWxfY2VudGVy4AEA"
                 >Rådhusstræde 13, 1466 KBH K link</a
               >
@@ -452,7 +479,7 @@
               >
               <a
                 href="https://www.google.com/maps/place/Huset-KBH/@55.6760427,12.5742462,19.01z/data=!3m1!5s0x4652531164c3af43:0x4d4efd44d8eb3be2!4m12!1m6!3m5!1s0x4652531164a3fb89:0xe98f70415a605063!2sTeaterhuset!8m2!3d55.6764034!4d12.5747686!3m4!1s0x0:0xdb78617809263eb5!8m2!3d55.6763715!4d12.5747148"
-                class="underline"
+                class="underline hover:text-accent"
               >
                 Rådhusstræde 12, 1466 KBH K
               </a>
